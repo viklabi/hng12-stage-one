@@ -38,12 +38,11 @@ const App = () => {
     if (selectedColor === targetColor) {
       setGameStatus('Correct! 🎉');
       setScore((prevScore) => prevScore + 1);
-
+      startNewGame()
     } else {
       setGameStatus('Wrong! 😢');
-
     }
-    startNewGame()
+    
   }
   useEffect(() => {
     startNewGame();
